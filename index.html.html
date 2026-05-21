@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padrões de Segurança Infantil — One Minute X</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --surface: #ffffff;
+      --ink: #1a1a1a;
+      --ink-soft: #555550;
+      --accent: #c0392b;
+      --accent-light: #fdf0ee;
+      --border: #e0ddd6;
+      --radius: 4px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--ink);
+      color: #fff;
+      padding: 48px 0 40px;
+      text-align: center;
+    }
+
+    header .app-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(24px, 5vw, 36px);
+      font-weight: 400;
+      line-height: 1.2;
+      color: #fff;
+    }
+
+    header .badge {
+      display: inline-block;
+      margin-top: 20px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 2px;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    .intro {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      padding: 20px 24px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin-bottom: 48px;
+      color: var(--ink-soft);
+      font-size: 15px;
+    }
+
+    section {
+      margin-bottom: 44px;
+      padding-bottom: 44px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+
+    p {
+      color: var(--ink-soft);
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+    }
+
+    ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: var(--ink-soft);
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    ul li::before {
+      content: '—';
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-top: 16px;
+    }
+
+    .contact-box p {
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+
+    .contact-box a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    .updated {
+      font-size: 13px;
+      color: #aaa;
+      margin-top: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: #aaa;
+      border-top: 1px solid var(--border);
+    }
+
+    footer strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="app-name">One Minute X</div>
+    <h1>Padrões de Segurança Infantil</h1>
+    <span class="badge">Política oficial do aplicativo</span>
+  </header>
+
+  <main>
+
+    <div class="intro">
+      O One Minute X tem compromisso absoluto com a segurança de crianças e adolescentes em sua plataforma. Esta página descreve nossos padrões contra o abuso e exploração sexual infantil (CSAE), conforme exigido pelas políticas do Google Play.
+    </div>
+
+    <section>
+      <h2>Nossa Política</h2>
+      <p>
+        O One Minute X proíbe estritamente qualquer conteúdo ou comportamento que explore, abuse ou coloque crianças e adolescentes em risco.
+      </p>
+      <p>Isso inclui, mas não se limita a:</p>
+      <ul>
+        <li>Qualquer forma de material de abuso sexual infantil (CSAM)</li>
+        <li>Aliciamento de menores para fins sexuais</li>
+        <li>Sextorsão envolvendo menores</li>
+        <li>Tráfico de crianças para exploração sexual</li>
+        <li>Qualquer conteúdo que sexualize crianças ou adolescentes</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Moderação e Denúncias</h2>
+      <p>
+        O One Minute X disponibiliza um mecanismo de denúncia diretamente dentro do aplicativo. Qualquer usuário pode reportar conteúdo impróprio sem precisar sair da plataforma.
+      </p>
+      <p>
+        Todo conteúdo denunciado é analisado. Quando confirmada a violação desta política, o conteúdo é removido imediatamente e as medidas cabíveis são tomadas contra o responsável.
+      </p>
+    </section>
+
+    <section>
+      <h2>Conformidade Legal</h2>
+      <p>
+        O One Minute X atua em conformidade com as leis de proteção infantil aplicáveis e com as políticas do Google Play. Qualquer conteúdo de abuso sexual infantil (CSAM) identificado é tratado com remoção imediata e, quando aplicável, reportado às autoridades competentes.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contato — Segurança Infantil</h2>
+      <p>
+        Para questões, denúncias ou dúvidas relacionadas à segurança infantil no One Minute X, entre em contato:
+      </p>
+      <div class="contact-box">
+        <p><strong>One Minute X</strong></p>
+        <p>E-mail: <a href="mailto:contato@oneminutex.com">contato@oneminutex.com</a></p>
+        <p class="updated">Última atualização: maio de 2026</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <strong>One Minute X</strong> &nbsp;·&nbsp; Todos os direitos reservados &nbsp;·&nbsp; 2026
+  </footer>
+
+</body>
+</html>
